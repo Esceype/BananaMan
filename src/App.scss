@@ -1,3 +1,96 @@
-.starter {
-  font-size: 18px;
+.banana {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  font-size: 40px;
+  background-color: aquamarine;
+
+  &__pictute {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin-right: 40px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: contain;
+    border: 0 solid black;
+    border-radius: 30%;
+  }
+
+  &__cloths {
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    left: 15px;
+    top: 10px;
+    z-index: 2;
+  }
+
+  &__eyes {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: 100px;
+    top: 80px;
+    z-index: 1;
+  }
+
+  &__hats {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    left: 12px;
+    top: 9px;
+    z-index: 1;
+  }
+
+  &__mouths {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    left: -43px;
+    top: -28px;
+    z-index: 2;
+  }
+
+  &__overSkin {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+  }
+
+  &__skin {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+  }
+
+  &__selects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__select {
+    margin-bottom: 10px;
+    font-size: 30px;
+    border: 1px solid aquamarine;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .banana {
+    flex-direction: column;
+    gap: 20px;
+
+    &__pictute {
+      margin-right: 0;
+    }
+  }
 }
